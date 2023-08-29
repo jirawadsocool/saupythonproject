@@ -1,0 +1,10 @@
+emp_name = input('ป้อนชื่อพนังงาน : ')
+sale_price = input('ป้อนยอดขาย : ')
+print('--------------------------')
+#ฟังก์ชันแปลง string เป็น Number ---> int( ), flosat( )
+commission = float(sale_price) * 10 /100
+y = format(float(sale_price),".2f")
+print(f'คุณ {emp_name} ยอดขาย {float(sale_price):.2f} บาท ได้ค่าคอม {commission:.2f} บาท')
+print("คุณ",emp_name,"ยอดขาย",format(float(sale_price),".2f"),"บาท ได้ค่าคอม", format(commission, ".2f"))
+print("คุณ"+ emp_name + "ยอดขาย" + str(y) + "บาท ได้ค่า่คอม" + str(format(commission, ".2f")))
+print("คุณ {} ยอดขาย {} บาท ได้ค่าคอม {} บาท" .format(emp_name, format(float(sale_price), ".2f"),format(commission, ".2f")))

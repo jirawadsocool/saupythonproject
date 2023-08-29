@@ -1,0 +1,6 @@
+width = float(input('ป้อนความกว้าง : '))
+long = float(input('ป้อนความยาว : '))
+high = float(input('ป้อนความสูง : '))
+print('----------------------------')
+total_area = round(((width * long * 2) + (width * high * 2) + (long * high *2))/5)
+print(f'กล่องสี่เหลี่ยมจะได้ความกว้าง')
