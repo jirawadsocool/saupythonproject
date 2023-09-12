@@ -4,32 +4,19 @@
 import math
 #inputRadius
 def inputRadius() :
-    # r = input('ป้อนรัศมี : ')
-    # return
-
-    # r = float(input('ป้อนรัศมี : ') )
-    # return r
-
-    #return input ('ป้อนรัศมี : ')
-
     return float( input('ป้อนรัศมี : ') )
 
-
-#calAreaCircle
 def calAreaCirle ( r ) :
-    #area = math.pi * r ** 2
-    #area = math.pi * r * r
-    # area = math.pi * math.pow(r, 2)
-    # return area
-    return math.pi * math.pow(r, 2)
+    return math.pi * r * r
 
-#calRoundCirle 2 * PI * r
 def calRoundCirle ( r ) :
-    
-
-
-#calCubeCirle 4 / 3 * PI * r * r * r
-
+    return 2 * math.pi * r
 
 #showResul ขอทั้งหมดทสนิยม 4 ตำแหน่ง
 #พื้นที่วงกลมเป็น ???? เส้นรอบวงเป็น ???? ปริมาณตรทรงกลมเป็น ??? (^_-) db (-_^)
+
+def showResul( ) :
+    r = inputRadius()
+    print(f"พื้นที่วงกลม {calAreaCirle(r):.4f} เส้นรอบวง {calRoundCirle(r):.4f} ปริมาตรทรงกลม {callable(r):.4f} ")
+
+showResul()
